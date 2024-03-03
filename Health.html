@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSFORMING TIDES</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<header id="hindex">
+    <video autoplay muted loop id="myVideo">
+        <div class="styledimg"></div>
+
+        <!-- <source src=   "C:\Users\HP\Downloads\istockphoto-1276799200-640_adpp_is.mp4" type="video/mp4"> -->
+        Your browser does not support HTML5 video.
+    </video>
+    <h1>We are here to help you feel better :)</h1> 
+</header>
+<style>
+  </style>
+<body class="bold-text">
+    <div id="video-container">
+        <video id="myVideo" autoplay muted loop>
+          <source src="hmm.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    
+      <div id="content">
+
+     <h1 id="index">TRANSFORMING TIDES</h1>
+    <select id="emotionSelect"style="font-size: 18px;>
+        <option value="heartbreak">Heartbreak</option>
+        <option value="anxiety">Anxiety</option>
+        <option value="depression">Depression</option>
+        <option value="loneliness">Loneliness</option>
+        <option value="discouraged">Discouraged</option>
+        <option value="suicidal">Suicidal</option>
+    </select>
+    
+    <button id="generateBtn">Generate Suggestions</button>
+    <div id="quoteArea"></div>
+    <div id="musicArea"></div>
+    <div id="podcastArea"></div>
+    <div id="movieArea"></div>
+    <div id="bookArea"></div>
+    <div id="text-areas">
+        <textarea placeholder="Feel free to express your feelings here " id="textArea1"></textarea>
+        
+    </div>
+    <div id="activityArea"></div>
+    <div id="text-areas">
+        <textarea placeholder="Please let us know how you feel after the activities " id="textArea1"></textarea>
+        
+    </div>
+    <div id="channelArea"></div>
+    <script src="script1.js"></script>
+  </div>
+  <div class="chat-container">
+    <div class="chat-messages" id="chat-messages"></div>
+    <form class="chat-form" id="chat-form">
+        <input type="text" id="message-input" placeholder="Type your message...">
+        <button type="submit">Send</button>
+    </form>
+</div>
+<script src="chatbot.js"></script>
+
+
+<script>
+  // Adjust the margin-top of the body to match the height of the fixed header
+  document.addEventListener("DOMContentLoaded", function () {
+      var headerHeight = document.querySelector("header").offsetHeight;
+      document.body.style.marginTop = headerHeight + "px";
+  });
+</script>
+</body>
+</html>
